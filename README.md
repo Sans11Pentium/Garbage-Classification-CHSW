@@ -9,6 +9,17 @@ This is a simple web application built with Streamlit that allows users to class
 - Easy-to-use and interactive interface
 - Fast and efficient inference using TensorFlow Lite
 
+### 🛠️ MobileNet to TFLite Conversion for Edge Impulse (TinyML Deployment)
+
+To deploy the trained MobileNet model on an edge device using **Edge Impulse**, I converted it to the TensorFlow Lite (TFLite) format. This enabled real-time inference on resource-constrained hardware as a TinyML application. 
+Link to live inferencing on EdgeImpulse : https://smartphone.edgeimpulse.com/classifier.html
+
+#### Steps Followed:
+1. **Model Training**  
+   I trained a lightweight `MobileNetV2` model using TensorFlow/Keras on the garbage classification dataset. The model was designed to be efficient and suitable for edge deployment.
+2. **TFLite Conversion**  
+   After training, I converted the Keras model (`.h5`) to a `.tflite` format using the TFLite converter.
+   
 ## 🧠 Supported Classes
 
 The app classifies the uploaded image into one of the following categories:
